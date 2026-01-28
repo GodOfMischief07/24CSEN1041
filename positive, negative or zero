@@ -5,3 +5,8 @@ elif x<0:
     print("negative")
 else:
     print("zero")
+
+#OUTPUT
+12 > positive
+-5 > negative
+0 > zero
