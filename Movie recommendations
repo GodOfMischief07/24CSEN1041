@@ -1,0 +1,59 @@
+ott = [
+    ["Netflix", "English", "Action", "Breaking Bad"],
+    ["Netflix", "English", "Action", "Stranger Things"],
+    ["Netflix", "English", "Action", "The Gray Man"],
+
+    ["Prime", "Hindi", "Action", "The Family Man"],
+    ["Prime", "Hindi", "Action", "Mirzapur"],
+    ["Prime", "Hindi", "Action", "Farzi"],
+
+    ["Hotstar", "English", "Drama", "Loki"],
+    ["Hotstar", "English", "Drama", "The Bear"],
+    ["Hotstar", "English", "Drama", "Moon Knight"]
+]
+
+language = input("Enter Language: ")
+genre = input("Enter Genre: ")
+platforms = ["Netflix", "Prime", "Hotstar"]
+
+for platform in platforms:
+    print("\nRecommendations from", platform, ":")
+    count = 0
+
+    for item in ott:
+        if item[0] == platform and item[1] == language and item[2] == genre:
+            print("-", item[3])
+            count += 1
+
+    if count == 0:
+        print("No recommendation found")
+
+#OUTPUT 1
+Enter Language: Englih sh
+Enter Genre: Action' 
+
+Recommendations from Netflix :
+- Breaking Bad
+- Stranger Things
+- The Gray Man
+
+Recommendations from Prime :
+No recommendation found
+
+Recommendations from Hotstar :
+No recommendation found
+
+#OUTPUT 2
+Enter Language: English
+Enter Genre: Drama
+
+Recommendations from Netflix :
+No recommendation found
+
+Recommendations from Prime :
+No recommendation found
+
+Recommendations from Hotstar :
+- Loki
+- The Bear
+- Moon Knight
