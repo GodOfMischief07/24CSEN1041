@@ -8,3 +8,7 @@ elif y>12:
     print(f"{y}:{z:02d} pm")
 else:
     print(f"{y}:{z:02d} am")
+
+#OUTPUT
+1800
+6:00 pm
