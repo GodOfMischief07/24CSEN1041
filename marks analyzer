@@ -1,0 +1,18 @@
+marks=[75, 88, 60, 92, 86, 78, 99, 65]
+average= sum(marks)/len(marks)
+highest=max(marks)
+lowest=min(marks)
+count=0
+for mark in marks:
+    if mark>average:
+        count+=1
+print("average=", average)
+print("highest=",highest)
+print("lowest=",lowest)
+print("count of no of marks abv avg=",count)
+
+#OUTPUT
+average= 80.375
+highest= 99
+lowest= 60
+count of no of marks abv avg= 4
