@@ -1,0 +1,7 @@
+words = ["AH", "AH", "AH"]
+
+reversed_words = [word[::-1] for word in words]
+print(reversed_words)
+
+#OUTPUT
+['HA', 'HA', 'HA']
