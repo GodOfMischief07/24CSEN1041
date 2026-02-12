@@ -1,0 +1,11 @@
+import random
+
+playlist = ["Song A", "Song B", "Song C", "Song D"]
+random.shuffle(playlist)
+
+print(playlist)
+
+#OUTPUT
+1-- ['Song C', 'Song A', 'Song D', 'Song B']
+2-- ['Song D', 'Song A', 'Song B', 'Song C']
+3-- ['Song B', 'Song A', 'Song D', 'Song C']
